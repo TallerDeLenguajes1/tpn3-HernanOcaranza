@@ -1,0 +1,38 @@
+# Creado por https://www.gitignore.io/api/c++
+# Editar en https://www.gitignore.io/?templates=c++
+
+### C ++ ###
+# Prerrequisitos
+*.re
+
+# Archivos de objetos compilados
+* .slo
+* .lo
+* .o
+* .obj
+
+# Encabezados precompilados
+* .gch
+* .pch
+
+# Bibliotecas dinámicas compiladas
+*.entonces
+* .dylib
+* .dll
+
+# Fortran archivos de módulo
+*.modificación
+* .smod
+
+# Bibliotecas estáticas compiladas
+* .lai
+*.la
+*.una
+* .lib
+
+# Ejecutables
+*.exe
+*.afuera
+* .app
+
+# Fin de https://www.gitignore.io/api/c++
