@@ -51,12 +51,12 @@ int main () {
     int cantClientes;
     printf("Ingrese la cantidad de clientes: ");
     scanf("%d", &cantClientes);
+    fflush(stdin);
     Cliente *clientes = (Cliente *) malloc(sizeof(Cliente) * cantClientes);
     CargarNClientes(clientes, cantClientes);
     MostrarNClientes(clientes, cantClientes);
     LiberarMemoria(clientes, cantClientes);
     
-    getchar();
     getchar();
     return 0;
 }
@@ -106,9 +106,9 @@ float CalcularCostoTotalProducto (Producto produc) {
 void MostrarProducto (Producto produc) {
     printf("\nId: %d", produc.ProductoID);
     printf("\nTipo: %s", produc.TipoProducto);
-    printf("\nPrecio: %.2f", produc.PrecioUnitario);
+    printf("\nPrecio: $%.2f", produc.PrecioUnitario);
     printf("\nCantidad: %d", produc.Cantidad);
-    printf("\nCosto Total: %.2f", CalcularCostoTotalProducto(produc));
+    printf("\nCosto Total: $%.2f", CalcularCostoTotalProducto(produc));
 }
 
 void MostrarCliente (Cliente clien) {
